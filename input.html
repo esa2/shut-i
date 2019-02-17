@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Nunito|Rozha+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <title>Sleep App Final Project</title>
+  </head>
+  <body>
+    <header>
+      <h1>shut-i</h1>
+      <nav id="nav_bar">
+        <a href="index.html" class = "menu">Home</a>
+        <a href="about.html" class = "menu">About Us</a>
+        <a class="logout_nav" id="logout_nav" href="javascript:logOut()">Logout</a>
+      </nav>
+      <h3 id="message"></h3>
+    </header>
+  <main>
+    <div class="container">
+    <div class="two_columns">
+      <img src="assets/bear.png" id="sleepy-bear">
+    </div>
+    <div class="two_columns_opaque">
+      <h4>Tell us a little bit about yourself</h4>
+      <form id = "input-form">
+        <p>Your first name</p>
+        <input id = "inputName" name  = "name" type = "text" value = "" required = "required">
+        <p>How old are you?</p>
+        <input id = "inputAge" name  = "age" type = "text" value = "" required = "required">
+        <p>What time do you want to wake up tomorrow?</p>
+        <select id = "inputWakeUp" name="numbers" required = "required">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select id = "inputAmPm" name="ampm">
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+        <p>Hours of sleep desired every night</p>
+        <input id = "inputHoursDesired" name  = "hoursDesired" type = "text" value = "" required = "required">
+        <div>
+         <p>Did you exercise today?</p>
+            <input type="radio" name="Exercise" id="yesexercise" value="yes" required>
+            <label for="exerciseChoice1">Yes</label>
+            <input type="radio" name="Exercise" id="noexercise" value="no" >
+            <label for="exerciseChoice2">No</label>
+        </div>
+        <div>
+            <p>Did you drink caffeine today?</p>
+            <input type="radio" name="caffeine" id="yescaffeine" value="yes"  required>
+            <label for="caffeineChoice1">Yes</label>
+            <input type="radio" name="caffeine" id="nocaffeine" value="no">
+            <label for="caffeineChoice2">No</label>
+        </div>
+        <div>
+          <button type="submit" class="inputbutton">Submit</button>
+        </div>
+      </form>
+  </div>
+  </div>
+  </main>
+    <footer id="footer">
+      <p id = "tip">Sleep tip here</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="input.js"></script>
+  </body>
+</html>

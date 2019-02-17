@@ -1,0 +1,264 @@
+body  {
+  background-image: url("assets/night-sky.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color:white;
+  margin-left: 0px;
+}
+
+nav {
+  font-family: 'Barlow Condensed', sans-serif;
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: 'Karla', serif;
+  font-size: 45px;
+}
+
+.aboutme {
+  display:inline-block;
+  max-width:125px;
+}
+
+a {
+  color:white;
+  text-decoration:none;
+}
+
+a:hover {
+  color:grey;
+  font-weight: bold;
+}
+
+#scroll {
+    overflow-y: scroll;
+    max-height:420px;
+}
+
+.two_columns_opaque {
+  background-color: rgba(32, 152, 227, 0.31);
+  display: inline-block;
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p, label, ul {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size:17px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+button, input, select {
+  background-color: rgba(200, 230, 248, 0.61);
+  font-family: 'Barlow Condensed', sans-serif;
+  border:none;
+  padding: 5px 5px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.inputbutton {
+  margin-top: 10px;
+}
+
+#sleepy-bear {
+  max-width: 85%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 150px auto;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 0px;
+  font-family: 'karla', sans-serif;
+}
+
+.two_columns {
+  display: inline-block;
+  float: left;
+  width: 45%;
+}
+
+#italics {
+  font-style: italic;
+}
+
+
+header {
+  text-align: center;
+  background-color: rgba(140, 203, 242, 0.21);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(140, 203, 242, 0.21);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+h1, h3 {
+  margin: 0px;
+}
+
+li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+
+ul {
+  padding: 10px;
+}
+
+#resultsdiv {
+  max-width:35%;
+  margin-top: 150px;
+  margin-left: 700px;
+  margin-right: 40px;
+  background-color: rgba(32, 152, 227, 0.31);
+  padding: 14px;
+}
+
+#upd-profile {
+  margin-left: 900px;
+}
+
+
+
+#update_button {
+  margin-top: 10px;
+
+  font-size: 17px;
+  background-color: rgba(200, 230, 248, 0.61);
+  font-family: 'Barlow Condensed', sans-serif;
+  border:none;
+  padding: 5px 5px;
+}
+
+.clock {
+  float: left;
+  margin-left: 80px;
+  border-radius: 50%;
+  background: url(assets/cl1.svg) no-repeat center;
+  no-repeat: center;
+  background-size: 88%;
+  height: 36em;
+  position: relative;
+  width: 36em;
+}
+
+.clock.simple:after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: 5%;
+  z-index: 10;
+}
+
+.minutes-container, .hours-container, .seconds-container, .disc-container, .chart-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+#doughnut-chart {
+  position: absolute;
+  top: 20%;
+}
+
+.hours {
+  background: #fff;
+  height: 30%;
+  left: 48.75%;
+  position: absolute;
+  top: 20%;
+  transform-origin: 50% 100%;
+  width: 2.5%;
+}
+
+.minutes {
+  background: #fff;
+  height: 32%;
+  left: 49%;
+  position: absolute;
+  top: 18%;
+  transform-origin: 50% 100%;
+  width: 2%;
+}
+
+.seconds {
+  background: #fff;
+  height:35%;
+  left: 49%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 100%;
+  width: 1%;
+  z-index: 8;
+}
+
+.disc {
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  left: 47%;
+  position: absolute;
+  top: 48%;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.hours-container {
+  animation: rotate 43200s infinite linear;
+  z-index: 18;
+}
+
+.minutes-container {
+  animation: rotate 3600s infinite linear;
+  z-index: 19;
+}
+
+.seconds-container {
+  animation: rotate 60s infinite steps(60);
+  z-index: 20;
+}
+
+#tip {
+  text-align: center;
+  font-size: 15px;
+}

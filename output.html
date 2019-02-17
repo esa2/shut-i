@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Nunito|Rozha+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <title>Sleep Profile</title>
+  </head>
+  <body>
+    <header>
+      <h1>shut-i</h1>
+      <nav>
+        <a href="index.html" id = "home_nav">Home</a>
+        <a href="about.html" id = "about_us_nav">About Us</a>
+        <a class="logout_nav" id="logout_nav" href="javascript:logOut()">Logout</a>
+      </nav>
+    </header>
+  <main id = "move-down">
+    <article class="clock">
+      <div class="hours-container">
+        <div class="hours"></div>
+      </div>
+      <div class="minutes-container">
+        <div class="minutes"></div>
+      </div>
+      <div class="seconds-container">
+        <div class="seconds"></div>
+      </div>
+      <div class="disc-container">
+        <div class="disc"></div>
+      </div>
+      <div class = "chart-container">
+      <canvas id="doughnut-chart" width="800" height="450"></canvas>
+      </div>
+    </article>
+
+    <div id = "resultsdiv">
+      <h4>Your personalized sleep plan...</h4>
+      <ul id = "results">
+      </ul>
+      <p class="bold">Update your sleep profile</p>
+      <form id = "profile">
+        <button id="update_button" type ="submit">Update</button>
+      </form>
+    </div>
+  </main>
+    <footer id="footer">
+      <p id = "tip"></p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="inputlistener.js"></script>
+    <script src="output.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
