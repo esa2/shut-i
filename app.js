@@ -10,20 +10,6 @@ function logOut() {
   showLogIn();
 }
 
-function foo() {
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-  console.log('foo')
-}
-
-
 function showLogIn() {
   var loginForm = document.getElementById('login-form');
   var text = document.createElement('h4');
