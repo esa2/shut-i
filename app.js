@@ -10,6 +10,8 @@ function logOut() {
   showLogIn();
 }
 
+var xx = 2
+
 
 function showLogIn() {
   var loginForm = document.getElementById('login-form');
